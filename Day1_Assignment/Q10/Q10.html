@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question ten</title>
+</head>
+
+<body>
+    <script>
+        /*What is hoisting?
+        The JavaScript engine before parses the code before executing and during the parsing
+        phase it shifts all the variabledeclaration to the top of the scope.
+        This behavior of the JS engine is called hoisting.*/
+
+        /*Variables defined with var are hoisted to the top and can be initialized at any time.
+        Meaning: You can use the variable before it is declared:*/
+
+        /*------------------------------------------------------------------------------------------------------------*/
+        /*Let :Cannot be Redeclared , must be declared with intialization*/
+        let test = "John Doe";
+        let test = 0; // SyntaxError: 'x' has already been declared
+        document.write(test);
+
+        /*Const :Cannot be Redeclared , must be declared with intialization*/
+        const test2 = 100;
+        const test2 = "AAABBB"; // SyntaxError: 'x' has already been declared
+        document.write(test);
+    </script>
+
+</body>
+
+</html>

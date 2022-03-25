@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Eight</title>
+    <style>
+        body {
+            text-align: center;
+            font-size: 40px;
+            font-weight: bolder;
+
+        }
+
+        body span {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- SCRIPT -->
+    <script>
+        do {
+            Name = prompt("Please enter your valid Name :")
+        } while (!isNaN(Name))
+
+        do {
+            year = parseInt(prompt("Please Enter your Year of Birth:"));
+            if (!isNaN(year) )
+            {
+                var res = !isNaN(year) && year < 2010 ? true : false;
+            }
+            else
+            {
+                res = false
+            }
+        } while (res == false)
+
+    var  Age = 2021 - year;
+        //Output of The User
+        document.write("<span>Name  :</span>" + " " + Name + "<br>")
+        document.write("<span>Birth Of Year :</span>" + " " + year + "<br>")
+        document.write("<span> Age  :</span>" + " " + Age + " " + "<br>")
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Four</title>
+    <style>
+        fieldset {
+            width: 500px;
+            height: 100px;
+            align-items: center;
+            margin: 100px;
+            background-color: #f4f4f4;
+        }
+
+        input {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- form content -->
+
+    <fieldset>
+        <legend>Enter Your Data</legend>
+        <input id="user_name" type="text" placeholder="Enter Name.. ">
+        <input id="pass" type="password" placeholder="Enter Password.. "><br><br>
+        <input type="checkbox" onclick="mycheck =! mycheck" id="validCheck">Remember Check <br><br>
+        <button type="button" onclick="EnterData()" id="btn_Enter"> Enter Data</button>
+        <button type="button" onclick="ClearData()" id="btn_Clear"> Clear Data</button>
+
+    </fieldset>
+
+
+    <!--Script-->
+    <script src="Q2.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonus Question</title>
+    <style>
+        button {
+            align-items: center;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Button-->
+    <button type="button" onClick="headers()">
+        Show Headers
+    </button>
+
+    <!-- Script Code -->
+    <script>
+
+        function headers() {
+            document.write("<h1>Heding</h1> <hr>");
+
+            for (var h = 1; h < 7; h++) {
+                document.write("<h" + h + ">" + "This Is Header Number :" + h + "</h" + h + ">");
+            }
+        }
+    </script>
+
+</body>
+
+</html>

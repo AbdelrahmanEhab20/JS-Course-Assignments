@@ -1,0 +1,9 @@
+/*STYLE*/
+.newgallery  {
+    display: grid;
+    grid-column-gap: 10px;
+}
+.newgallery img {
+    width:500px;
+    padding: 50px;
+}

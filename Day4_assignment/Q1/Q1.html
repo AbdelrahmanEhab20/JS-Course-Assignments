@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question One</title>
+    <style>
+        body {
+            align-items: center;
+            text-align: center;
+            display: block;
+        }
+
+        body form {
+            background-color: #f4f4f4;
+            display: block;
+            padding: 40px;
+            margin: 40px;
+            align-items: center;
+            text-align: center;
+            width: 300px;
+            height: 300px;
+            border: 5px solid black;
+        }
+        body form button{
+            background-color: blanchedalmond;
+            font-weight: bolder;
+        }
+        body form button:hover{
+            background-color: green;
+            color: white;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Regestration Form  -->
+    <form id="myform" action="SecondPage.html">
+        <label for="name">Full Name</label>
+        <input placeholder="Enter Your Name" type="text" name="username" id="username" required>
+        <br><label for="invalid" id="invalid"  style="display:none ; color: red;">Invalid Name</label>
+        <br><br>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required><br><br>
+
+        <label for="cities">Choose City</label>
+        <select id="cities"> Choose City
+            <option value="cairo">Cairo</option>
+            <option value="alex">Alex</option>
+            <option value="suiz">Suiz</option>
+            <option value="menia">Menia</option>
+        </select><br><br>
+
+        <label for="pass">Password </label>
+        <input type="password" id="passw1" name="pass" required><br><br>
+
+        <label for="pass">Repeat Password </label>
+        <input type="password" id="passw2" name="pass" required><br><br>
+        <br><label for="invalidpass" id="passVali"  style="display:none; color: green;"> password and RE-password Are the same</label>
+
+        <input type="checkbox" name="check_box" id="check-box">
+        <label>I accept the terms and conditions</label><br><br>
+
+        <button name="register_btn">Register</button>
+
+    </form>
+
+
+    <!-- <Script -->
+
+    <Script src="Q1.js"></Script>
+</body>
+
+</html>

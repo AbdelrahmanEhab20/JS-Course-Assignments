@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Four</title>
+    <style>
+        body h1{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Script -->
+    <script>
+        function gettemp(temp, actual) {
+            if ((25 < temp && temp < 30) && (25 < actual && actual < 30)) {
+                return ("<h1>IT IS NORMAL</h1>");
+            }
+            else if (temp < 25 && actual < 25) {
+                return ("<h1>IT IS COLD</h1>");
+            }
+            else if (temp > 30 && actual > 30) {
+                return ("<h1>IT IS HOT</h1>");
+            }
+            else {
+                return ("<h1> IT IS Ambiguous</h1>");
+            }
+        }
+        var Temp = parseInt(prompt("Enter Temprature:"));
+        var Actual = parseInt(prompt("Enter Actual feel:"));
+        var res = gettemp(Temp, Actual);
+        document.write(res);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,8 @@
+/*STYLE*/
+body img {
+    display: grid;
+}
+img {
+    width: 50%;
+    padding: 10px;
+}

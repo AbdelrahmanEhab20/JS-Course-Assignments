@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question six</title>
+</head>
+
+<body>
+    <!-- Script -->
+    <script>
+        function odd(start_number, end_number) {
+            document.write(`Your Odd numbers Between ${start_num} and ${end_num} is = `)
+            for (i = start_number; i < end_num; i++) {
+                if (i % 2 != 0) {
+                    document.write("<br>" + i);
+                }
+            }
+        }
+        var start_num = parseInt(prompt("Enter Start Number :"));
+        var end_num = parseInt(prompt("Enter End Number :"));
+        var res = odd(start_num, end_num);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question one</title>
+</head>
+
+<body>
+    <!-- Html Code -->
+    <!-- Key Check -->
+    <h3>Press a key on the keyboard in the Text Box:</h3><br>
+    <input placeholder="This For Key Press" type="text" size="70" onkeypress="myFunction(event)" >
+    <p> ASCII of the key we pressed:</p>
+    <p id="mytext"></p>
+    <br>
+
+    <!-- Mouse Check -->
+    <p>
+        0 = The left mouse button<br>
+        1 = The middle mouse button<br>
+        2 = The right mouse button
+    </p>
+    
+    <p> check mouse pressed:</p>
+    <input placeholder="This For Mouse Press" id="press" type="text" size="70" onmousedown="mouseFunction(event)">
+    <p id ="clicked"></p>
+
+    <!-- Script -->
+    <script src="Q1.js"></script>
+</body>
+
+</html>
